@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rifat Adnan — Workforce Planning, Forecasting & Data</title>
+  <meta name="description" content="Rifat Adnan — workforce manager and analyst in Dhaka. Call-volume forecasting, workforce planning, Excel/VBA automation, and a growing focus on data analytics and AI-assisted development.">
+  <meta property="og:title" content="Rifat Adnan — Workforce Planning, Forecasting & Data">
+  <meta property="og:description" content="Turning operations data into decisions.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#1e3fd0">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/theme-init.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav" id="top">
+    <div class="container nav__inner">
+      <a href="#top" class="brand" aria-label="Rifat Adnan — home">
+        <span class="brand__mark">RA</span><span class="brand__name">Rifat Adnan</span>
+      </a>
+      <nav class="nav__links" id="navLinks" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="blog.html">Blog</a>
+        <a href="#contact" class="nav__cta">Contact</a>
+      </nav>
+      <div class="nav__actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Switch light / dark mode">
+          <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+        </button>
+        <button class="icon-btn nav__burger" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="eyebrow eyebrow--light"><span class="pulse"></span> Workforce Manager · Dhaka</p>
+          <h1>Turning operations data<br>into <span class="gold">decisions.</span></h1>
+          <p class="hero__lead">I'm Rifat — I forecast call volumes, plan the people behind them, and build tools that automate the busywork. Now growing into data analytics, system design and AI-assisted development.</p>
+          <div class="hero__btns">
+            <a href="#projects" class="btn btn--light">See my work</a>
+            <button class="btn btn--ghost" data-open-chat>Ask my chatbot</button>
+          </div>
+          <ul class="hero__facts">
+            <li><strong>BRAC Bank</strong><span>Associate Manager</span></li>
+            <li><strong>IBA</strong><span>MBA</span></li>
+            <li><strong>MIST</strong><span>BSc Electrical Eng.</span></li>
+          </ul>
+        </div>
+
+        <!-- Animated forecast chart -->
+        <div class="hero__chart" aria-hidden="true">
+          <div class="chart-card">
+            <div class="chart-card__head">
+              <span class="mono">call_volume.forecast</span>
+              <span class="chart-legend"><i class="lg-actual"></i>Actual <i class="lg-fc"></i>Forecast</span>
+            </div>
+            <svg viewBox="0 0 400 220" class="fc-svg">
+              <defs>
+                <linearGradient id="fcFill" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="0" stop-color="#ffffff" stop-opacity=".28"/>
+                  <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <g class="fc-grid">
+                <line x1="0" y1="50" x2="400" y2="50"/><line x1="0" y1="100" x2="400" y2="100"/>
+                <line x1="0" y1="150" x2="400" y2="150"/><line x1="0" y1="200" x2="400" y2="200"/>
+              </g>
+              <path class="fc-band" d="M240 92 C 270 70, 290 60, 320 78 S 370 120, 400 96 L400 140 C 370 162, 350 128, 320 118 S 270 112, 240 120 Z"/>
+              <path class="fc-area" d="M0 170 C 20 150, 40 120, 60 135 S 100 175, 120 150 S 160 80, 180 100 S 220 140, 240 106 L240 210 L0 210 Z"/>
+              <path class="fc-actual" d="M0 170 C 20 150, 40 120, 60 135 S 100 175, 120 150 S 160 80, 180 100 S 220 140, 240 106"/>
+              <path class="fc-line" d="M240 106 C 270 82, 290 72, 320 98 S 370 140, 400 118"/>
+              <circle class="fc-dot" cx="240" cy="106" r="5"/>
+            </svg>
+            <div class="chart-card__foot">
+              <div><span class="mono">horizon</span><strong>next 4 wks</strong></div>
+              <div><span class="mono">method</span><strong>trend + theory</strong></div>
+              <div><span class="mono">output</span><strong>staffing plan</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container about">
+        <div class="about__photo reveal">
+          <!-- To use a photo: put it at assets/photo.jpg and replace the <span> below with
+               <img src="assets/photo.jpg" alt="Rifat Adnan"> -->
+          <div class="avatar"><span>RA</span></div>
+        </div>
+        <div class="about__text reveal">
+          <p class="eyebrow">About me</p>
+          <h2>Engineer by training, planner by trade, builder by habit.</h2>
+          <p>I studied Electrical Engineering at MIST and did a full-time MBA at IBA, University of Dhaka. Today I work at <strong>BRAC Bank</strong> as an Associate Manager in Alternate Banking Channels, where I've been the <strong>Workforce Manager for the Virtual Banking contact centre</strong> since January 2025.</p>
+          <p>My job is to make sure the right number of people are in the right seats at the right time. That means forecasting how many calls will come in, proposing staffing, building rosters and breaks, and reporting on how the team performs. Along the way I've built Excel, VBA and Access tools that do the repetitive parts automatically.</p>
+          <p>Before banking I worked as a graphic designer, so I care about how things look as much as how they work. Next, I'm moving deeper into <strong>data analytics, data science, system design, digital branding</strong> and <strong>AI-assisted development</strong>.</p>
+          <div class="about__links" data-social></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section section--tint" id="experience">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Experience</p>
+          <h2>Where I've worked</h2>
+        </div>
+        <ol class="timeline">
+          <li class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="card">
+              <div class="tl-meta"><span class="tag tag--brand">Aug 2024 – Present</span><span class="muted">BRAC Bank · Dhaka</span></div>
+              <h3>Associate Manager, Alternate Banking Channels</h3>
+              <p class="tl-sub">Workforce Manager — Virtual Banking contact centre (since Jan 2025)</p>
+              <ul class="ticks">
+                <li>Forecast call volume using a method I built from historical trends and planning theory</li>
+                <li>Turn forecasts into staffing proposals for management</li>
+                <li>Build agent rosters and break schedules</li>
+                <li>Report on agent and team performance</li>
+                <li>Run ad-hoc data analysis for management decisions</li>
+                <li>Track leave and office timing across the team</li>
+              </ul>
+            </div>
+          </li>
+          <li class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="card">
+              <div class="tl-meta"><span class="tag tag--brand">Until Aug 2024</span><span class="muted">BRAC Bank · Dhaka</span></div>
+              <h3>Management Trainee Officer (MTO)</h3>
+              <ul class="ticks">
+                <li>Joined BRAC Bank through its competitive MTO programme</li>
+                <li>Completed the preliminary MTO programme in May 2024</li>
+                <li>Promoted from Senior Officer to Principal Officer in August 2024</li>
+              </ul>
+            </div>
+          </li>
+          <li class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="card">
+              <div class="tl-meta"><span class="tag tag--brand">Oct 2020 – Sep 2021</span><span class="muted">eGeneration Ltd · Dhaka</span></div>
+              <h3>Graphic Designer</h3>
+              <ul class="ticks">
+                <li>Designed visual and brand material for digital and print</li>
+                <li>Built the eye for layout and branding that I still use in every report and tool</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Education</p>
+          <h2>Where I learned</h2>
+        </div>
+        <div class="grid-2">
+          <article class="card edu reveal">
+            <div class="edu__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 2.5 9 2.5 12 0v-5"/></svg>
+            </div>
+            <div>
+              <span class="tag tag--brand">Feb 2022 – Aug 2024</span>
+              <h3>Master of Business Administration (MBA)</h3>
+              <p class="muted">Institute of Business Administration (IBA), University of Dhaka · 2-year full-time</p>
+            </div>
+          </article>
+          <article class="card edu reveal">
+            <div class="edu__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg>
+            </div>
+            <div>
+              <span class="tag tag--brand">Undergraduate</span>
+              <h3>BSc in Electrical Engineering</h3>
+              <p class="muted">Military Institute of Science and Technology (MIST), Dhaka</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section section--tint" id="skills">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Skills</p>
+          <h2>What I bring</h2>
+        </div>
+        <div class="grid-3">
+          <article class="card skill reveal">
+            <h3><span class="skill__ic">📈</span> Planning & Analytics</h3>
+            <ul class="chips">
+              <li>Call-volume forecasting</li><li>Workforce planning</li><li>Staffing models</li>
+              <li>Rostering & scheduling</li><li>Performance reporting</li><li>Data analysis</li>
+            </ul>
+          </article>
+          <article class="card skill reveal">
+            <h3><span class="skill__ic">⚙️</span> Tools & Automation</h3>
+            <ul class="chips">
+              <li>Advanced Excel</li><li>VBA & UserForms</li><li>MS Access (backend)</li>
+              <li>Excel + Access systems</li><li>AI-assisted coding</li><li>Claude / Claude Code</li>
+            </ul>
+          </article>
+          <article class="card skill reveal">
+            <h3><span class="skill__ic">🎨</span> Design & Brand</h3>
+            <ul class="chips">
+              <li>Graphic design</li><li>Visual communication</li><li>Branding</li><li>Report & dashboard design</li>
+            </ul>
+          </article>
+        </div>
+        <div class="learning reveal">
+          <span class="learning__label"><span class="pulse pulse--gold"></span> Currently learning</span>
+          <ul class="chips chips--gold"><li>Power BI</li><li>SQL</li></ul>
+          <span class="learning__label learning__label--next">Heading toward</span>
+          <ul class="chips chips--outline"><li>Data science</li><li>System design</li><li>Digital marketing</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Projects</p>
+          <h2>Things I've built</h2>
+          <p class="muted">Tools built to solve real problems at work and at home. Demos use fictional data.</p>
+        </div>
+
+        <!-- Featured project -->
+        <article class="card feature reveal">
+          <div class="feature__media">
+            <!-- To add your demo video: put the file at assets/break-scheduler-demo.mp4,
+                 then replace the whole <div class="video-ph"> block below with:
+                 <video src="assets/break-scheduler-demo.mp4" controls playsinline preload="metadata"></video>
+                 (For a YouTube video, ask Claude for the embed code.) -->
+            <div class="video-ph">
+              <div class="video-ph__play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+              <span>60-second demo · coming soon</span>
+            </div>
+          </div>
+          <div class="feature__body">
+            <span class="tag tag--gold">Featured</span>
+            <h3>Break Scheduler</h3>
+            <p>Paste in a day's agent roster and get a complete, optimised break plan back. Breaks are spread out so enough agents are always on the phones, and every break follows the centre's rules.</p>
+            <ul class="ticks">
+              <li>Automatic and manual optimisers</li>
+              <li>A rules compiler, so break policy can change without touching code</li>
+              <li>A smart generator that builds the schedule from the pasted roster</li>
+            </ul>
+            <ul class="chips chips--sm"><li>Excel</li><li>VBA</li><li>Optimisation</li><li>Operations</li></ul>
+          </div>
+        </article>
+
+        <div class="grid-3 projects">
+          <article class="card project reveal">
+            <div class="project__ic">📊</div>
+            <h3>Call-Volume Forecasting Method</h3>
+            <p>My own approach to predicting how many calls a contact centre will get, built from historical trends and planning theory, then turned into staffing needs.</p>
+            <ul class="chips chips--sm"><li>Forecasting</li><li>Excel</li><li>WFM</li></ul>
+          </article>
+          <article class="card project reveal">
+            <div class="project__ic">✉️</div>
+            <h3>Email Tracking System</h3>
+            <p>An Excel tool with a VBA form for logging, assigning and following up emails, so nothing gets lost and status is visible at a glance.</p>
+            <ul class="chips chips--sm"><li>Excel</li><li>VBA UserForm</li></ul>
+          </article>
+          <article class="card project reveal">
+            <div class="project__ic">🗣️</div>
+            <h3>1-2-1 Session Recording</h3>
+            <p>A workbook for recording one-to-one coaching sessions in a consistent format, so feedback and follow-ups are easy to find later.</p>
+            <ul class="chips chips--sm"><li>Excel</li><li>VBA</li><li>Coaching</li></ul>
+          </article>
+          <article class="card project reveal">
+            <div class="project__ic">📄</div>
+            <h3>RiftPDF</h3>
+            <p>A personal PDF utility, built with AI-assisted development.</p>
+            <ul class="chips chips--sm"><li>AI-assisted</li><li>Utility</li></ul>
+          </article>
+          <article class="card project reveal">
+            <div class="project__ic">📱</div>
+            <h3>PortalSurfer</h3>
+            <p>Turns a phone into a file-transfer server for a laptop over a port you choose. Move files without cables or cloud uploads.</p>
+            <ul class="chips chips--sm"><li>Networking</li><li>AI-assisted</li></ul>
+          </article>
+          <article class="card project project--cta reveal">
+            <div class="project__ic">💡</div>
+            <h3>Want to see more?</h3>
+            <p>Ask my chatbot about any project, or get in touch for a walkthrough.</p>
+            <button class="btn btn--brand btn--sm" data-open-chat>Ask the chatbot</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ACHIEVEMENTS ============ -->
+    <section class="section section--royal" id="achievements">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow eyebrow--light">Achievements</p>
+          <h2>Milestones</h2>
+        </div>
+        <div class="grid-4">
+          <div class="ach reveal"><span class="ach__year">Jan 2025</span><h3>Appointed Workforce Manager</h3><p>Took ownership of planning for BRAC Bank's Virtual Banking contact centre.</p></div>
+          <div class="ach reveal"><span class="ach__year">Aug 2024</span><h3>Promoted to Principal Officer</h3><p>Moved up from Senior Officer at BRAC Bank.</p></div>
+          <div class="ach reveal"><span class="ach__year">Aug 2024</span><h3>MBA from IBA</h3><p>Completed the 2-year full-time MBA at IBA, University of Dhaka.</p></div>
+          <div class="ach reveal"><span class="ach__year">May 2024</span><h3>Completed MTO programme</h3><p>Finished BRAC Bank's preliminary Management Trainee programme.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BLOG PREVIEW ============ -->
+    <section class="section" id="blog">
+      <div class="container">
+        <div class="section__head section__head--row reveal">
+          <div>
+            <p class="eyebrow">Blog</p>
+            <h2>Latest writing</h2>
+          </div>
+          <a href="blog.html" class="link-arrow">All posts →</a>
+        </div>
+        <div class="grid-3" id="latestPosts" data-limit="3"></div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section--tint" id="contact">
+      <div class="container contact">
+        <div class="contact__text reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Let's talk.</h2>
+          <p class="muted">Open to conversations about data, workforce planning, automation and new opportunities. Send a message and I'll reply by email.</p>
+          <div class="about__links" data-social></div>
+        </div>
+        <!-- Netlify reads this form automatically and emails you each message. -->
+        <form class="card form reveal" name="contact" method="POST" data-netlify="true" netlify-honeypot="company" id="contactForm">
+          <input type="hidden" name="form-name" value="contact">
+          <p class="hp"><label>Leave this empty <input name="company"></label></p>
+          <label>Name<input type="text" name="name" required autocomplete="name"></label>
+          <label>Email<input type="email" name="email" required autocomplete="email"></label>
+          <label>Message<textarea name="message" rows="5" required></textarea></label>
+          <button class="btn btn--brand" type="submit">Send message</button>
+          <p class="form__status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year"></span> Rifat Adnan · Dhaka</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/blog.js"></script>
+  <script src="js/faq.js"></script>
+  <script src="js/chatbot.js"></script>
+</body>
+</html>
